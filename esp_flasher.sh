@@ -2,10 +2,13 @@
 
 # esp_flasher.sh - ESP82xx Flasher Helper Script
 # 
-#	Just a simple script to save some typing while holding jumper wires.
-#	This script will take you though the steps of backing up, erasing, 
-#	and flashing an ESP82xx device using esptool.py
+# Just a simple script to save some typing while holding jumper wires.
+# This script will take you though the steps of backing up, erasing, 
+# and flashing an ESP82xx device using esptool.py
 
+# Tested with:
+# WeMos D1 Mini
+# Sonoff Basic R2
 
 # Adjust variables as needed.
 PACKAGE="esp_flasher.sh"
@@ -14,7 +17,7 @@ PORT="/dev/ttyUSB0"
 FLASH_MODE="dout"
 FLASH_SIZE="1MB"
 MEMSTART="0x00000"
-MEMEND="0x10000"  # 1MB Flash
+MEMEND="0x10000"
 
 
 # Get args
