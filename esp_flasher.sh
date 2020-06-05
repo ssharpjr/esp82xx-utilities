@@ -47,7 +47,7 @@ while test $# -gt 0; do
 			echo
 			exit 0
 			;;
-		-a)
+		-a|--auto)
 			export AUTO_MODE=1
 			shift
 			;;
@@ -71,12 +71,9 @@ while test $# -gt 0; do
 			BACKUP_FILE=$(echo $1 | sed -e 's/^[^=]*=//g')
 			export BACKUP_FILE
 			;;
-		-e)
+		-e|--erase)
 			export ERASE_FLASH=1
 			shift
-			;;
-		--erase)
-			export ERASE_FLASH=1
 			;;
 		-f)
 			shift
